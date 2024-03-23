@@ -8,6 +8,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppAppBar from "./components/AppAppBar";
 import Hero from "./components/Hero";
 import UnderDevelopment from "./components/UnderDevelopment";
+import SocialIcons from "./components/SocialIcons";
 // import LogoCollection from "./components/LogoCollection";
 // import Highlights from "./components/Highlights";
 // import Pricing from "./components/Pricing";
@@ -32,7 +33,7 @@ function App() {
         <section id="hero" className="snap-start">
           <Hero />
         </section>
-      
+
         {/* <Box sx={{ bgcolor: "background.default" }}>
         <LogoCollection />
         <Features />
@@ -50,6 +51,7 @@ function App() {
         <section id="hero" className="snap-start">
           <UnderDevelopment />
         </section>
+      <SocialIcons mode={mode}/>
       </div>
     </ThemeProvider>
   );

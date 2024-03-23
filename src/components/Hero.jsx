@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { Slide, Fade } from "react-awesome-reveal";
 
 export default function Hero() {
   return (
@@ -34,46 +35,42 @@ export default function Hero() {
             useFlexGap
             sx={{ width: { xs: "100%", sm: "70%" }, textAlign: "center" }}
           >
-            <Typography
-              component="h2"
-              variant="h2"
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "column", md: "row" },
-                alignSelf: "center",
-                textAlign: "center",
-                textBase: "text-lg sm:text-xl",
-              }}
-            >
-              Himal Gautam <br />
-            </Typography>
-            <Typography
-              color="primary"
-              gutterBottom
-              component="span"
-              variant="h3"
-              sx={{
-                color: (theme) =>
-                  theme.palette.mode === "light"
-                    ? "primary.main"
-                    : "primary.dark",
-              }}
-            >
-              Software Developer
-            </Typography>
-            <Typography
-              variant="body1"
-              textAlign="center"
-              color="text.secondary"
-            >
-              Dynamic software developer with over 1+ year of experience in
-              software development, currently pursuing a Master{"'"}s degree in
-              Computer Science. Demonstrated expertise in technical
-              problem-solving and a passion for technology. Seeking to leverage
-              skills and academic background to excel and contributing to the
-              future of flight innovation while honing leadership abilities and
-              technical acumen.
-            </Typography>
+            <Slide>
+              <Typography component="h2" variant="h2">
+                Himal Gautam <br />
+              </Typography>
+            </Slide>
+            <Slide direction="right">
+              <Typography
+                color="primary"
+                gutterBottom
+                component="span"
+                variant="h3"
+                sx={{
+                  color: (theme) =>
+                    theme.palette.mode === "light"
+                      ? "primary.main"
+                      : "primary.dark",
+                }}
+              >
+                Software Developer
+              </Typography>
+            </Slide>
+            <Fade delay="100">
+              <Typography
+                variant="body1"
+                textAlign="center"
+                color="text.secondary"
+              >
+                Dynamic software developer with over 1+ year of experience in
+                software development, currently pursuing a Master{"'"}s degree
+                in Computer Science. Demonstrated expertise in technical
+                problem-solving and a passion for technology. Seeking to
+                leverage skills and academic background to excel and
+                contributing to the future of flight innovation while honing
+                leadership abilities and technical acumen.
+              </Typography>
+            </Fade>
           </Stack>
         </Container>
       </Box>

@@ -1,26 +1,38 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
-import Box from '@mui/material/Box';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
-import MenuItem from '@mui/material/MenuItem';
-import Drawer from '@mui/material/Drawer';
-import MenuIcon from '@mui/icons-material/Menu';
-import ToggleColorMode from './ToggleColorMode';
+import Box from "@mui/material/Box";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+import MenuItem from "@mui/material/MenuItem";
+import Drawer from "@mui/material/Drawer";
+import MenuIcon from "@mui/icons-material/Menu";
+import ToggleColorMode from "./ToggleColorMode";
+import logo from "../assets/logo_name.png";
 
 const logoStyle = {
-  width: '140px',
-  height: 'auto',
-  cursor: 'pointer',
+  width: "140px",
+  height: "auto",
+  cursor: "pointer",
+  margin: "0 0 0 0",
 };
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
+
+  const sections = [
+    { tag: "skills", nav: "Skills" },
+    { tag: "projects", nav: "Projects" },
+    { tag: "experience", nav: "Experience" },
+    { tag: "education", nav: "Education" },
+    { tag: "certifications", nav: "Certifications" },
+    { tag: "testimonials", nav: "Testimonials" },
+    { tag: "extras", nav: "Extras" },
+  ];
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -31,10 +43,10 @@ function AppAppBar({ mode, toggleColorMode }) {
     const offset = 128;
     if (sectionElement) {
       const targetScroll = sectionElement.offsetTop - offset;
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
+      sectionElement.scrollIntoView({ behavior: "smooth" });
       window.scrollTo({
         top: targetScroll,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
       setOpen(false);
     }
@@ -83,20 +95,31 @@ function AppAppBar({ mode, toggleColorMode }) {
                 px: 0,
               }}
             >
-              <img
-                src={
-                  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg"
-                }
-                style={logoStyle}
-                alt="logo of sitemark"
-              />
+              <Box sx={{ pb: 1, mr: 2 }}>
+                <img src={logo} alt="logo" style={logoStyle} />
+              </Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <MenuItem
-                  onClick={() => scrollToSection("features")}
+                {sections.map((section) => (
+                  <MenuItem
+                    key={section.nav}
+                    onClick={() => {
+                      let sec = section.tag;
+                      scrollToSection(sec);
+                    }}
+                    sx={{ py: "6px", px: "12px" }}
+                  >
+                    <Typography variant="body2" color="text.primary">
+                      {section.nav}
+                    </Typography>
+                  </MenuItem>
+                ))}
+
+                {/* <MenuItem
+                  onClick={() => scrollToSection("skills")}
                   sx={{ py: "6px", px: "12px" }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Features
+                    Skills
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -130,7 +153,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <Typography variant="body2" color="text.primary">
                     FAQ
                   </Typography>
-                </MenuItem>
+                </MenuItem> */}
               </Box>
             </Box>
             <Box
@@ -174,8 +197,20 @@ function AppAppBar({ mode, toggleColorMode }) {
                       toggleColorMode={toggleColorMode}
                     />
                   </Box>
-                  <MenuItem onClick={() => scrollToSection("features")}>
-                    Features
+                  {sections.map((section) => (
+                    <MenuItem
+                      key={section.nav}
+                      onClick={() => {
+                        let sec = section.tag;
+                        scrollToSection(sec);
+                      }}
+                    >
+                        {section.nav}
+                    </MenuItem>
+                  ))}
+
+                  {/* <MenuItem onClick={() => scrollToSection("skills")}>
+                    Skills
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection("testimonials")}>
                     Testimonials
@@ -188,7 +223,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection("faq")}>
                     FAQ
-                  </MenuItem>
+                  </MenuItem> */}
                   <Divider />
                 </Box>
               </Drawer>
@@ -201,7 +236,7 @@ function AppAppBar({ mode, toggleColorMode }) {
 }
 
 AppAppBar.propTypes = {
-  mode: PropTypes.oneOf(['dark', 'light']).isRequired,
+  mode: PropTypes.oneOf(["dark", "light"]).isRequired,
   toggleColorMode: PropTypes.func.isRequired,
 };
 
