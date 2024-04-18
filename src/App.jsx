@@ -10,10 +10,10 @@ import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
 // import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
 import Testimonials from "./components/Testimonials";
 // import FAQ from "./components/FAQ";
 import UnderDevelopment from "./components/UnderDevelopment";
-
 function App() {
   const [mode, setMode] = React.useState("dark");
   const defaultTheme = createTheme({ palette: { mode } });
@@ -33,14 +33,17 @@ function App() {
         <section id="skills" className="snap-start">
           <Skills />
         </section>
+        <section id="experience" className="snap-start">
+          <Experience />
+        </section>
+        <section id="education" className="snap-start">
+          <Education />
+        </section>
         <section id="certifications" className="snap-start">
           <Certifications />
         </section>
         <section id="testimonials" className="snap-start">
           <Testimonials />
-        </section>
-        <section id="experience" className="snap-start">
-          <Experience />
         </section>
         {/* <section id="projects" className="snap-start">
           <Projects />
