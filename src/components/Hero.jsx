@@ -4,6 +4,7 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Slide, Fade } from "react-awesome-reveal";
+import portfolioDetails from "../data/portfolioDetails";
 
 export default function Hero() {
   return (
@@ -37,7 +38,7 @@ export default function Hero() {
           >
             <Slide>
               <Typography component="h2" variant="h2">
-                Himal Gautam <br />
+                {portfolioDetails.name} <br />
               </Typography>
             </Slide>
             <Slide direction="right">
@@ -53,7 +54,7 @@ export default function Hero() {
                       : "primary.dark",
                 }}
               >
-                Software Developer
+                {portfolioDetails.title}
               </Typography>
             </Slide>
             <Fade delay="100">
@@ -62,13 +63,7 @@ export default function Hero() {
                 textAlign="center"
                 color="text.secondary"
               >
-                Dynamic software developer with over 1+ year of experience in
-                software development, currently pursuing a Master{"'"}s degree
-                in Computer Science. Demonstrated expertise in technical
-                problem-solving and a passion for technology. Seeking to
-                leverage skills and academic background to excel and
-                contributing to the future of flight innovation while honing
-                leadership abilities and technical acumen.
+                {portfolioDetails.about}
               </Typography>
             </Fade>
           </Stack>

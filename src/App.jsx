@@ -2,20 +2,16 @@ import "./App.css";
 
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-// import Box from "@mui/material/Box";
-// import Divider from "@mui/material/Divider";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppAppBar from "./components/AppAppBar";
 import Hero from "./components/Hero";
-import UnderDevelopment from "./components/UnderDevelopment";
 import SocialIcons from "./components/SocialIcons";
-// import LogoCollection from "./components/LogoCollection";
-// import Highlights from "./components/Highlights";
+import Skills from "./components/Skills";
+import Certifications from "./components/Certifications";
+// import Projects from "./components/Projects";
 // import Pricing from "./components/Pricing";
-// import Features from "./components/Features";
 // import Testimonials from "./components/Testimonials";
 // import FAQ from "./components/FAQ";
-// import Footer from "./components/Footer";
 
 function App() {
   const [mode, setMode] = React.useState("dark");
@@ -33,25 +29,28 @@ function App() {
         <section id="hero" className="snap-start">
           <Hero />
         </section>
-
-        {/* <Box sx={{ bgcolor: "background.default" }}>
-        <LogoCollection />
-        <Features />
-        <Divider />
-        <Testimonials />
-        <Divider />
-        <Highlights />
-        <Divider />
-        <Pricing />
-        <Divider />
-        <FAQ />
-        <Divider />
-        <Footer />
-      </Box> */}
-        <section id="hero" className="snap-start">
-          <UnderDevelopment />
+        <section id="skills" className="snap-start">
+          <Skills />
         </section>
-      <SocialIcons mode={mode}/>
+        <section id="certifications" className="snap-start">
+          <Certifications />
+        </section>
+        {/* <section id="projects" className="snap-start">
+          <Projects />
+        </section> */}
+        {/*<section id="experience" className="snap-start">
+          <Pricing />
+        </section>
+        <section id="education" className="snap-start">
+          <Pricing />
+        </section>
+        <section id="testimonials" className="snap-start">
+          <Testimonials />
+        </section> */}
+        {/* <section id="hero" className="snap-start">
+          <FAQ />
+        </section> */}
+        <SocialIcons mode={mode} />
       </div>
     </ThemeProvider>
   );

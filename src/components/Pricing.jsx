@@ -57,28 +57,20 @@ export default function Pricing() {
   return (
     <Container
       id="pricing"
-      sx={{
-        pt: { xs: 4, sm: 12 },
-        pb: { xs: 8, sm: 16 },
-        position: 'relative',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: { xs: 3, sm: 6 },
-      }}
+      className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden"
     >
       <Box
         sx={{
-          width: { sm: '100%', md: '60%' },
-          textAlign: { sm: 'left', md: 'center' },
+          width: { sm: "100%", md: "60%" },
+          textAlign: { sm: "left", md: "center", lg: "center" },
         }}
       >
         <Typography component="h2" variant="h4" color="text.primary">
           Pricing
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Quickly build an effective pricing table for your potential customers with
-          this layout. <br />
+          Quickly build an effective pricing table for your potential customers
+          with this layout. <br />
           It&apos;s built with default Material UI components with little
           customization.
         </Typography>
@@ -89,21 +81,21 @@ export default function Pricing() {
             item
             key={tier.title}
             xs={12}
-            sm={tier.title === 'Enterprise' ? 12 : 6}
+            sm={tier.title === "Enterprise" ? 12 : 6}
             md={4}
           >
             <Card
               sx={{
                 p: 2,
-                display: 'flex',
-                flexDirection: 'column',
+                display: "flex",
+                flexDirection: "column",
                 gap: 4,
-                border: tier.title === 'Professional' ? '1px solid' : undefined,
+                border: tier.title === "Professional" ? "1px solid" : undefined,
                 borderColor:
-                  tier.title === 'Professional' ? 'primary.main' : undefined,
+                  tier.title === "Professional" ? "primary.main" : undefined,
                 background:
-                  tier.title === 'Professional'
-                    ? 'linear-gradient(#033363, #021F3B)'
+                  tier.title === "Professional"
+                    ? "linear-gradient(#033363, #021F3B)"
                     : undefined,
               }}
             >
@@ -111,29 +103,29 @@ export default function Pricing() {
                 <Box
                   sx={{
                     mb: 1,
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    color: tier.title === 'Professional' ? 'grey.100' : '',
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    color: tier.title === "Professional" ? "grey.100" : "",
                   }}
                 >
                   <Typography component="h3" variant="h6">
                     {tier.title}
                   </Typography>
-                  {tier.title === 'Professional' && (
+                  {tier.title === "Professional" && (
                     <Chip
                       icon={<AutoAwesomeIcon />}
                       label={tier.subheader}
                       size="small"
                       sx={{
                         background: (theme) =>
-                          theme.palette.mode === 'light' ? '' : 'none',
-                        backgroundColor: 'primary.contrastText',
-                        '& .MuiChip-label': {
-                          color: 'primary.dark',
+                          theme.palette.mode === "light" ? "" : "none",
+                        backgroundColor: "primary.contrastText",
+                        "& .MuiChip-label": {
+                          color: "primary.dark",
                         },
-                        '& .MuiChip-icon': {
-                          color: 'primary.dark',
+                        "& .MuiChip-icon": {
+                          color: "primary.dark",
                         },
                       }}
                     />
@@ -141,9 +133,10 @@ export default function Pricing() {
                 </Box>
                 <Box
                   sx={{
-                    display: 'flex',
-                    alignItems: 'baseline',
-                    color: tier.title === 'Professional' ? 'grey.50' : undefined,
+                    display: "flex",
+                    alignItems: "baseline",
+                    color:
+                      tier.title === "Professional" ? "grey.50" : undefined,
                   }}
                 >
                   <Typography component="h3" variant="h2">
@@ -157,7 +150,7 @@ export default function Pricing() {
                   sx={{
                     my: 2,
                     opacity: 0.2,
-                    borderColor: 'grey.500',
+                    borderColor: "grey.500",
                   }}
                 />
                 {tier.description.map((line) => (
@@ -165,18 +158,18 @@ export default function Pricing() {
                     key={line}
                     sx={{
                       py: 1,
-                      display: 'flex',
+                      display: "flex",
                       gap: 1.5,
-                      alignItems: 'center',
+                      alignItems: "center",
                     }}
                   >
                     <CheckCircleRoundedIcon
                       sx={{
                         width: 20,
                         color:
-                          tier.title === 'Professional'
-                            ? 'primary.light'
-                            : 'primary.main',
+                          tier.title === "Professional"
+                            ? "primary.light"
+                            : "primary.main",
                       }}
                     />
                     <Typography
@@ -184,7 +177,9 @@ export default function Pricing() {
                       variant="subtitle2"
                       sx={{
                         color:
-                          tier.title === 'Professional' ? 'grey.200' : undefined,
+                          tier.title === "Professional"
+                            ? "grey.200"
+                            : undefined,
                       }}
                     >
                       {line}
