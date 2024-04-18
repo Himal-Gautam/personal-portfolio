@@ -81,7 +81,7 @@ export default function Certifications() {
                     }}
                   >
                     <img
-                      src={`src/assets/${item.issuer}.svg`}
+                      src={`src/assets/svg/${item.issuer}.svg`}
                       alt={`${item.issuer} Logo`}
                       className="w-20 h-auto"
                     />

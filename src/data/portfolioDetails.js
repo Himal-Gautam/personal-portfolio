@@ -8,7 +8,7 @@ const portfolioDetails = {
   about:
     "Dynamic software developer with over 1+ year of experience in software development, currently pursuing a Master's degree in Computer Science. Demonstrated expertise in technical problem-solving and a passion for technology. Seeking to leverage skills and academic background to excel and contributing to the future of flight innovation while honing leadership abilities and technical acumen.",
   contact: {},
-  work: [
+  experiences: [
     {
       position: "Full Stack Developer",
       company: "Aptachain Solutions Pvt. Ltd.",
@@ -164,6 +164,44 @@ const portfolioDetails = {
         "Completed Python, JavaScript, React, and SQL courses. Ready for advanced learning and projects.",
     },
   ],
+  testimonials: [
+  {
+    name: "Muralidhara Mallur",
+    occupation: "Technical Evangelist at DELL",
+    testimonial:
+      "I had the pleasure of working with Himal Goutham when he joined our team as a fresher. From the outset, Himal demonstrated a keen ability to absorb new information and apply it effectively in our projects. His contributions were not just limited to his assigned tasks; he consistently went above and beyond, offering insights that benefited the entire team. His work ethic and dedication to team success were truly commendable.",
+  },
+  {
+    name: "Vishal Magdum",
+    occupation: "SDE at Trustt (formerly Novopay)",
+    testimonial:
+      "I've had the pleasure of working closely with Himal at Aptachain Solutions, and I highly recommend him. He is an outstanding system architect with a strong grasp of data structures and algorithms. Himal is not only technically proficient but also possesses a friendly and approachable demeanor. His collaborative nature and positive attitude make him a valuable asset to any team. I've learned a lot from him, and I'm confident that his skills and expertise make him an excellent choice for any project.",
+  },
+  {
+    name: "Harishankher Selvaraj",
+    occupation: "Talent LEad & Head of Placements",
+    testimonial:
+      "I have been closely watching him as a learner at GUVI. He is perfect in his assignments and in his perseverance. He is learning to obey and to pursue. He has the perfect culture fit for any organization. He is very professional in seeking things. His expertise in problem solving is awesome. He is good at Core JavaScript and, moreover, has good experience in frameworks, both front-end and back-end. His communication skills are beyond excellent. He is a hardworking and diligent person who will complete his assignments on time. He has the maturity to handle the team soon after if he gets a proper route.",
+  },
+  {
+    name: "Shrey Parikh",
+    occupation: "Corporate Relations at Upgrad",
+    testimonial:
+      "Himal is a focused and exceptional developer. He has all the ingredients needed to reach the very top. He has the skills and the technical know-how to become a professional developer.",
+  },
+  {
+    name: "Shrey Parikh",
+    occupation: "Corporate Relations at Upgrad",
+    testimonial:
+      "Himal is a focused and exceptional developer. He has all the ingredients needed to reach the very top. He has the skills and the technical know-how to become a professional developer.",
+  },
+  {
+    name: "Shrey Parikh",
+    occupation: "Corporate Relations at Upgrad",
+    testimonial:
+      "I am writing this recommendation to express my utmost appreciation for Himal, an exceptional MERN Stack Developer. Himal possesses a deep understanding of the MERN (MongoDB, Express.js, React.js, Node.js) stack, and his technical expertise is truly impressive. I have witnessed Himal's dedication and passion for his work, which undoubtedly reflects in the outstanding outcomes he produces. :)",
+  },
+]
 };
 
 export default portfolioDetails;

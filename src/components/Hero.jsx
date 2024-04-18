@@ -6,9 +6,13 @@ import Typography from "@mui/material/Typography";
 import { Slide, Fade } from "react-awesome-reveal";
 import portfolioDetails from "../data/portfolioDetails";
 
+
 export default function Hero() {
+
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden">
+    <div
+      className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden"
+    >
       <Box
         id="hero"
         sx={(theme) => ({
@@ -37,7 +41,12 @@ export default function Hero() {
             sx={{ width: { xs: "100%", sm: "70%" }, textAlign: "center" }}
           >
             <Slide>
-              <Typography component="h2" variant="h2">
+              <Typography
+                component="h2"
+                variant="h2"
+                onMouseEnter={() => play()}
+                onMouseLeave={() => stop()}
+              >
                 {portfolioDetails.name} <br />
               </Typography>
             </Slide>

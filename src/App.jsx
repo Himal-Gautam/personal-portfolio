@@ -9,9 +9,10 @@ import SocialIcons from "./components/SocialIcons";
 import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
 // import Projects from "./components/Projects";
-// import Pricing from "./components/Pricing";
-// import Testimonials from "./components/Testimonials";
+import Experience from "./components/Experience";
+import Testimonials from "./components/Testimonials";
 // import FAQ from "./components/FAQ";
+import UnderDevelopment from "./components/UnderDevelopment";
 
 function App() {
   const [mode, setMode] = React.useState("dark");
@@ -35,21 +36,24 @@ function App() {
         <section id="certifications" className="snap-start">
           <Certifications />
         </section>
+        <section id="testimonials" className="snap-start">
+          <Testimonials />
+        </section>
+        <section id="experience" className="snap-start">
+          <Experience />
+        </section>
         {/* <section id="projects" className="snap-start">
           <Projects />
         </section> */}
-        {/*<section id="experience" className="snap-start">
+        {/*<section id="education" className="snap-start">
           <Pricing />
-        </section>
-        <section id="education" className="snap-start">
-          <Pricing />
-        </section>
-        <section id="testimonials" className="snap-start">
-          <Testimonials />
-        </section> */}
+        </section>*/}
         {/* <section id="hero" className="snap-start">
           <FAQ />
         </section> */}
+        <section id="certifications" className="snap-start">
+          <UnderDevelopment />
+        </section>
         <SocialIcons mode={mode} />
       </div>
     </ThemeProvider>

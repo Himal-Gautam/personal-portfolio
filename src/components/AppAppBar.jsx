@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import ToggleColorMode from "./ToggleColorMode";
-import logo from "../assets/logo_name.png";
+import logo from "../assets/images/logo_name.png";
 
 const logoStyle = {
   width: "140px",
