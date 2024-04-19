@@ -68,7 +68,9 @@ export default function Testimonials() {
                       textAlign: "left",
                       maxHeight: 100,
                       overflowY: "scroll",
-                      textOverflow: "ellipsis",
+                      "&::-webkit-scrollbar": {
+                        display: "none",
+                      },
                     }}
                   >
                     {testimonial.testimonial}

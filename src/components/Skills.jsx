@@ -10,10 +10,10 @@ import TableRow from "@mui/material/TableRow";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import portfolioDetails from "../data/portfolioDetails";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Zoom, Slide } from "react-awesome-reveal";
 
 export default function Skills() {
-  const theme = useTheme()
+  const theme = useTheme();
   useEffect(() => {
     AOS.init();
   }, []);
@@ -23,22 +23,41 @@ export default function Skills() {
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden"
       sx={{ py: 4 }}
     >
-      <Typography
-        component="h4"
-        variant="h4"
-        align="center"
-        color="text.secondary"
-      >
-        <Zoom>
-        Technologies I have used
-        </Zoom>
+      <Typography component="h2" variant="h4">
+        <Zoom>Technologies I have used</Zoom>
       </Typography>
       <TableContainer sx={{ maxWidth: 2 / 3 }}>
         <Table
-          // sx={{ minWidth: 650, justifyContent: "center" }}
           aria-label="simple table"
         >
           <TableBody>
+            {portfolioDetails.techStack.map((row, i) => (
+              <TableRow key={row.type + i}>
+                <TableCell component="th" scope="row">
+                  <Slide delay={i * 3}>
+                    <b>{row.type}</b>
+                  </Slide>
+                </TableCell>
+                <TableCell
+                  align="left"
+                  sx={{
+                    overflowY: "scroll",
+                    "&::-webkit-scrollbar": {
+                      display: "none",
+                    },
+                  }}
+                >
+                  <Slide direction="right" delay={i * 3}>
+                    <img
+                      src={`https://skillicons.dev/icons?i=${row.technologies}&theme=${theme.palette.mode}`}
+                      alt={`${row.type} technologies`}
+                    />
+                  </Slide>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+          {/* <TableBody>
             {portfolioDetails.techStack.map((row, i) => (
               <TableRow
                 key={row.type + i}
@@ -59,7 +78,7 @@ export default function Skills() {
                 </TableCell>
               </TableRow>
             ))}
-          </TableBody>
+          </TableBody> */}
         </Table>
       </TableContainer>
     </Box>

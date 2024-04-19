@@ -58,7 +58,7 @@ export default function Experience() {
                     direction={index % 2 ? "right" : "left"}
                     cascade
                     duration="250"
-                    delay={index * 600}
+                    delay={index * 250}
                   >
                     <Typography variant="h6" component="span">
                       <b>{experience.position}</b>

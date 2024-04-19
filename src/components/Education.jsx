@@ -1,4 +1,3 @@
-import * as React from "react";
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
@@ -8,22 +7,6 @@ import portfolioDetails from "../data/portfolioDetails";
 import { Bounce, Fade } from "react-awesome-reveal";
 
 export default function Education() {
-  // const [activeStep, setActiveStep] = React.useState(-1);
-
-  // React.useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setActiveStep((prevStep) => {
-  //       const nextStep = prevStep + 1;
-  //       if (nextStep == 3) {
-  //         clearInterval(intervalId);
-  //       }
-  //       return nextStep;
-  //     });
-  //   }, 500);
-  //   return () => {
-  //     clearInterval(intervalId);
-  //   };
-  // }, []);
 
   return (
     <Box

@@ -54,39 +54,45 @@ const portfolioDetails = {
   projects: [
     {
       name: "Project 1",
-      description: "Brief description of the project...",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
       githubLink: "https://github.com/yourusername/project1",
       deployedLink: "https://yourproject1.com",
     },
     {
       name: "Project 2",
-      description: "Brief description of the project...",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
       githubLink: "https://github.com/yourusername/project2",
       deployedLink: "https://yourproject2.com",
     },
     {
-      name: "Project 1",
-      description: "Brief description of the project...",
-      githubLink: "https://github.com/yourusername/project1",
-      deployedLink: "https://yourproject1.com",
+      name: "Project 3",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
+      githubLink: "https://github.com/yourusername/project3",
+      deployedLink: "https://yourproject3.com",
     },
     {
-      name: "Project 2",
-      description: "Brief description of the project...",
-      githubLink: "https://github.com/yourusername/project2",
-      deployedLink: "https://yourproject2.com",
+      name: "Project 4",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
+      githubLink: "https://github.com/yourusername/project4",
+      deployedLink: "https://yourproject4.com",
     },
     {
-      name: "Project 1",
-      description: "Brief description of the project...",
-      githubLink: "https://github.com/yourusername/project1",
-      deployedLink: "https://yourproject1.com",
+      name: "Project 5",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
+      githubLink: "https://github.com/yourusername/project5",
+      deployedLink: "https://yourproject5.com",
     },
     {
-      name: "Project 2",
-      description: "Brief description of the project...",
-      githubLink: "https://github.com/yourusername/project2",
-      deployedLink: "https://yourproject2.com",
+      name: "Project 6",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
+      githubLink: "https://github.com/yourusername/project6",
+      deployedLink: "https://yourproject6.com",
     },
     // Add more projects if needed
   ],
