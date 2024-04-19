@@ -3,6 +3,7 @@ import "./App.css";
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { useMediaQuery } from "@mui/material";
 import AppAppBar from "./components/AppAppBar";
 import Hero from "./components/Hero";
 import SocialIcons from "./components/SocialIcons";
@@ -12,11 +13,15 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Testimonials from "./components/Testimonials";
+import FAQ from "./components/FAQ";
+import Extras from "./components/Extras";
 // import FAQ from "./components/FAQ";
+
 function App() {
   const [mode, setMode] = React.useState("dark");
   const defaultTheme = createTheme({ palette: { mode } });
-
+  const lg = useMediaQuery("(min-width: 1280px)");
+  const md = useMediaQuery("(min-width: 960px)");
   const toggleColorMode = () => {
     setMode((prev) => (prev === "dark" ? "light" : "dark"));
   };
@@ -24,7 +29,15 @@ function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <div className="h-screen snap-y scroll-smooth snap-mandatory snap-always overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
+      <div
+        className={`h-screen ${
+          lg
+            ? "snap-y scroll-smooth snap-mandatory snap-always overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]"
+            : md
+            ? "snap-y scroll-smooth snap-mandatory snap-always overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]"
+            : "h-screen overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]"
+        }`}
+      >
         <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
         <section id="hero" className="snap-start">
           <Hero />
@@ -47,9 +60,13 @@ function App() {
         <section id="testimonials" className="snap-start">
           <Testimonials />
         </section>
-        {/* <section id="hero" className="snap-start">
+        {/* <section id="extras" className="snap-start">
           <FAQ />
         </section> */}
+
+        <section id="extras" className="snap-start">
+          <Extras />
+        </section>
         <SocialIcons mode={mode} />
       </div>
     </ThemeProvider>

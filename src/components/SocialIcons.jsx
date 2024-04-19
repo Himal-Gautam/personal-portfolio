@@ -21,8 +21,8 @@ const SocialIcons = ({ mode }) => {
                 target="_blank"
                 network={social.network}
                 style={{ height: 40, width: 40 }}
-                bgColor="#42a5f5"
-                fgColor={mode === "dark" ? "#FFFFFF" : "#141414"}
+                fgColor="#141414"
+                bgColor={mode === "dark" ? "#FFFFFF" : "#42a5f5"}
                 url={social.url}
               />
             ))}

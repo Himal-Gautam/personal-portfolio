@@ -24,7 +24,7 @@ export default function Certifications() {
     >
       <Container
         sx={{
-          position: "relative",
+          // position: "relative",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

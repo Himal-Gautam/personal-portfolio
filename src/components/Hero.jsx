@@ -3,12 +3,11 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { Flip, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import portfolioDetails from "../data/portfolioDetails";
 
 export default function Hero() {
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden">
       <Box
         id="hero"
         sx={(theme) => ({
@@ -57,7 +56,7 @@ export default function Hero() {
                 {portfolioDetails.title}
               </Fade>
             </Typography>
-            <Fade delay="100">
+            <Fade delay="75">
               <Typography
                 variant="body1"
                 textAlign="center"
@@ -69,6 +68,5 @@ export default function Hero() {
           </Stack>
         </Container>
       </Box>
-    </div>
   );
 }
