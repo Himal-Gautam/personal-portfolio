@@ -25,13 +25,13 @@ function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
 
   const sections = [
-    { tag: "skills", nav: "Skills" },
-    { tag: "projects", nav: "Projects" },
-    { tag: "experience", nav: "Experience" },
-    { tag: "education", nav: "Education" },
-    { tag: "certifications", nav: "Certifications" },
-    { tag: "testimonials", nav: "Testimonials" },
-    { tag: "extras", nav: "Extras" },
+    { tag: "#skills", nav: "Skills" },
+    { tag: "#projects", nav: "Projects" },
+    { tag: "#experience", nav: "Experience" },
+    { tag: "#education", nav: "Education" },
+    { tag: "#certifications", nav: "Certifications" },
+    { tag: "#testimonials", nav: "Testimonials" },
+    { tag: "#extras", nav: "Extras" },
   ];
 
   const toggleDrawer = (newOpen) => () => {
@@ -96,23 +96,22 @@ function AppAppBar({ mode, toggleColorMode }) {
               }}
             >
               <Box sx={{ pb: 1, mr: 2 }}>
-                <img src={logo} alt="logo" style={logoStyle} />
+                <a href="#hero">
+                  <img src={logo} alt="logo" style={logoStyle} />
+                </a>
               </Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
                 {sections.map((section) => (
-                  <MenuItem
+                  <Button
                     key={section.nav}
-                    onClick={() => {
-                      scrollToSection(section.tag);
-                    }}
+                    href={section.tag}
                     sx={{ py: "6px", px: "12px" }}
                   >
                     <Typography variant="body2" color="text.primary">
                       {section.nav}
                     </Typography>
-                  </MenuItem>
+                  </Button>
                 ))}
-
               </Box>
             </Box>
             <Box
@@ -157,32 +156,16 @@ function AppAppBar({ mode, toggleColorMode }) {
                     />
                   </Box>
                   {sections.map((section) => (
-                    <MenuItem
-                      key={section.nav}
-                      onClick={() => {
-                        let sec = section.tag;
-                        scrollToSection(sec);
-                      }}
-                    >
+                    <a key={section.nav} href={section.tag}>
+                      <MenuItem
+                        onClick={() => {
+                          setOpen(false);
+                        }}
+                      >
                         {section.nav}
-                    </MenuItem>
+                      </MenuItem>
+                    </a>
                   ))}
-
-                  {/* <MenuItem onClick={() => scrollToSection("skills")}>
-                    Skills
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("testimonials")}>
-                    Testimonials
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("highlights")}>
-                    Highlights
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("pricing")}>
-                    Pricing
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("faq")}>
-                    FAQ
-                  </MenuItem> */}
                   <Divider />
                 </Box>
               </Drawer>

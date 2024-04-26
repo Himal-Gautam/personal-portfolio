@@ -22,7 +22,8 @@ const portfolioDetails = {
       company: "Techivies Solutions Pvt. Ltd.",
       duration: "Sept 2022 - Oct 2022",
       location: "Ahmedabad",
-      description: "Did a two-month program learning to build websites with AngularJS. Helped with big projects, working on the insides of websites and using AngularJS. Learned to use tools like Swagger for making projects easier. Got the hang of the MERN stack and how to do backend development, thanks to some smart guidance.,"
+      description:
+        "Did a two-month program learning to build websites with AngularJS. Helped with big projects, working on the insides of websites and using AngularJS. Learned to use tools like Swagger for making projects easier. Got the hang of the MERN stack and how to do backend development, thanks to some smart guidance.,",
     },
     {
       position: "Full Stack Developer - Intern",
@@ -129,6 +130,8 @@ const portfolioDetails = {
     { network: "linkedin", url: "https://www.linkedin.com/in/himal-gautam/" },
     { network: "email", url: "mailto:himal.developer.job@gmail.com" },
     { network: "twitter", url: "https://twitter.com/_himal_gautam" },
+    { network: "medium", url: "https://medium.com/@himalpgautam" },
+    { network: "instagram", url: "https://www.instagram.com/_himal_gautam" },
   ],
   certifications: [
     {

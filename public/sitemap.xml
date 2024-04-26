@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://himalgautam.in/schemas/sitemap/0.9">
+  <url>
+    <loc>https://himalgautam.in/#hero</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://himalgautam.in/#skills</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://himalgautam.in/#projects</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://himalgautam.in/#experience</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://himalgautam.in/#education</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://himalgautam.in/#certifications</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://himalgautam.in/#testimonials</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://himalgautam.in/#extras</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>

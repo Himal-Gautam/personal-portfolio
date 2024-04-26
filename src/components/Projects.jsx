@@ -68,6 +68,7 @@ export default function Projects() {
                   alt="green iguana"
                   height="140"
                   image="\images\project.jpg"
+                  loading="lazy"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">

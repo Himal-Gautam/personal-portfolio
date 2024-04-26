@@ -31,8 +31,8 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <div
-        className={`h-screen overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A] ${
-          md || lg ? "snap-y scroll-smooth snap-mandatory snap-always" : ""
+        className={`h-screen overflow-x-hidden scroll-smooth z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A] ${
+          md || lg ? "snap-y snap-mandatory snap-always" : ""
         }`}
       >
         <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />

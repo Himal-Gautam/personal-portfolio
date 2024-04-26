@@ -39,50 +39,51 @@ export default function Certifications() {
           {portfolioDetails.certifications.map((item, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Fade cascade direction="up">
-              <Stack
-                direction="column"
-                color="inherit"
-                component={Card}
-                spacing={1}
-                useFlexGap
-                sx={{
-                  p: 3,
-                  minHeight: 250,
-                  height: "100%",
-                  border: "1px solid",
-                  borderColor: theme === "light" ? "grey" : "grey.800",
-                  boxShadow: 10,
-                }}
-              >
-                <Box
+                <Stack
+                  direction="column"
+                  color="inherit"
+                  component={Card}
+                  spacing={1}
+                  useFlexGap
                   sx={{
-                    // opacity: "50%",
-                    display: "flex",
-                    justifyContent: "center",
-                    width: "100%",
-                    minHeight: 80,
-                    height: 1 / 3,
+                    p: 3,
+                    minHeight: 250,
+                    height: "100%",
+                    border: "1px solid",
+                    borderColor: theme === "light" ? "grey" : "grey.800",
+                    boxShadow: 10,
                   }}
                 >
-                  <img
-                    src={`/svg/${item.issuer}.svg`}
-                    alt={`${item.issuer} Logo`}
-                    className="w-20 h-auto"
-                  />
-                </Box>
-                <div>
-                  <Typography fontWeight="medium" gutterBottom>
-                    {item.title}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    textAlign="center"
-                    color="text.secondary"
+                  <Box
+                    sx={{
+                      // opacity: "50%",
+                      display: "flex",
+                      justifyContent: "center",
+                      width: "100%",
+                      minHeight: 80,
+                      height: 1 / 3,
+                    }}
                   >
-                    {item.description}
-                  </Typography>
-                </div>
-              </Stack>
+                    <img
+                      src={`/svg/${item.issuer}.svg`}
+                      alt={`${item.issuer} Logo`}
+                      className="w-20 h-auto"
+                      loading="lazy"
+                    />
+                  </Box>
+                  <div>
+                    <Typography fontWeight="medium" gutterBottom>
+                      {item.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      textAlign="center"
+                      color="text.secondary"
+                    >
+                      {item.description}
+                    </Typography>
+                  </div>
+                </Stack>
               </Fade>
             </Grid>
           ))}
