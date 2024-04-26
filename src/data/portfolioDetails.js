@@ -15,15 +15,14 @@ const portfolioDetails = {
       duration: "Nov 2022 - Oct 2023",
       location: "Bangalore",
       description:
-        "Brief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievements...",
+        "Transitioned from Intern to Full Stack Developer, consistently delivering value over the tenure. Took the full responsibilty of the product from start to end. Led high-level design discussions and project planning with the share holders of the startup. Led a team having 2 developers as team lead, utilizing Azure DevOps and Google Spaces to guide and properly manage the tasks. Designed a robust SaaS product architecture according the requirements given. Completed the project documentation including product as well as process documentation. Implemented DevOps concepts (Docker, Kubernetes) and cloud computing (AWS, GCP, Oracle) on the base level. Took interviews for the positisions available for developers as the side tasks.",
     },
     {
       position: "Full Stack Developer - Intern",
       company: "Techivies Solutions Pvt. Ltd.",
       duration: "Sept 2022 - Oct 2022",
       location: "Ahmedabad",
-      description:
-        "Brief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievements...",
+      description: "Did a two-month program learning to build websites with AngularJS. Helped with big projects, working on the insides of websites and using AngularJS. Learned to use tools like Swagger for making projects easier. Got the hang of the MERN stack and how to do backend development, thanks to some smart guidance.,"
     },
     {
       position: "Full Stack Developer - Intern",
@@ -31,7 +30,7 @@ const portfolioDetails = {
       duration: "June 2022 - June 2022",
       location: "Surat",
       description:
-        "Brief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievementsBrief description of your responsibilities and achievements...",
+        "Hands-on experience in Full Stack development, applying core concepts to real-world projects. Designed and developed CRUD applications, aligning with specified task given. Demonstrated strong time management skills, consistently completing daily tasks. Maintained open communication with senior team members, submitting progress reports for efficient task coordination and supervision.",
     },
   ],
   education: [

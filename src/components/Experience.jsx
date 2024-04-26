@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
@@ -10,8 +10,11 @@ import Typography from "@mui/material/Typography";
 import portfolioDetails from "../data/portfolioDetails";
 import { Fade, Flip } from "react-awesome-reveal";
 import Tooltip from "@mui/material/Tooltip";
+import { useMediaQuery } from "@mui/material";
 
 export default function Experience() {
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+
   return (
     <Box
       id="pricing"
@@ -19,7 +22,7 @@ export default function Experience() {
     >
       <Container
         sx={{
-          position: "relative",
+          // position: "relative",
           display: "flex",
           flexDirection: "column",
           gap: { xs: 3, sm: 6 },
@@ -34,12 +37,27 @@ export default function Experience() {
           <Typography component="h2" variant="h4">
             <Flip duration="500">Experience</Flip>
           </Typography>
-          <Typography variant="body1" sx={{ color: "grey.400" }}>
-            Hover over dots to know about roles and responsibilities
-          </Typography>
+          {!isSmallScreen && (
+            <Typography variant="body1" sx={{ color: "grey.400" }}>
+              Hover over dots to know about roles and responsibilities
+            </Typography>
+          )}
         </Box>
         <Box>
-          <Timeline position="alternate-reverse">
+          <Timeline
+            position={!isSmallScreen ? "alternate-reverse" : undefined}
+            sx={
+              isSmallScreen
+                ? {
+                    [`& .${timelineItemClasses.root}:before`]: {
+                      flex: 0,
+                      paddingLeft: 5,
+                    },
+                  }
+                : undefined
+            }
+          >
+            {/* <Timeline position={isSmallScreen ? "right" : "alternate-reverse"}> */}
             {portfolioDetails.experiences.map((experience, index) => (
               <TimelineItem key={experience}>
                 <TimelineSeparator>

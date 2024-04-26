@@ -11,8 +11,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import portfolioDetails from "../data/portfolioDetails";
 import { Zoom, Slide } from "react-awesome-reveal";
+import { useMediaQuery } from "@mui/material";
 
 export default function Skills() {
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+  const isMediumScreen = useMediaQuery("(max-width:900px)");
   const theme = useTheme();
   useEffect(() => {
     AOS.init();
@@ -21,15 +24,13 @@ export default function Skills() {
     <Box
       id="logoCollection"
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden"
-      sx={{ py: 4 }}
+      sx={{ py: 4, ...((isSmallScreen || isMediumScreen) && { paddingTop: 15 }) }}
     >
       <Typography component="h2" variant="h4">
         <Zoom>Technologies I have used</Zoom>
       </Typography>
-      <TableContainer sx={{ maxWidth: 2 / 3 }}>
-        <Table
-          aria-label="simple table"
-        >
+      <TableContainer sx={{ maxWidth: "75%" }}>
+        <Table aria-label="simple table">
           <TableBody>
             {portfolioDetails.techStack.map((row, i) => (
               <TableRow key={row.type + i}>
@@ -49,7 +50,11 @@ export default function Skills() {
                 >
                   <Slide direction="right" delay={i * 3}>
                     <img
-                      src={`https://skillicons.dev/icons?i=${row.technologies}&theme=${theme.palette.mode}`}
+                      src={
+                        `https://skillicons.dev/icons?i=${row.technologies}&theme=${theme.palette.mode}` +
+                        (isSmallScreen ? "&perline=4" : "") +
+                        (isMediumScreen ? "&perline=6" : "")
+                      }
                       alt={`${row.type} technologies`}
                     />
                   </Slide>

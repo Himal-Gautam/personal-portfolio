@@ -8,28 +8,24 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import portfolioDetails from "../data/portfolioDetails";
 import { Zoom, AttentionSeeker } from "react-awesome-reveal";
+import { useMediaQuery } from "@mui/material";
 
 export default function Testimonials() {
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+
   return (
     <Container
       id="testimonials"
-      className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden"
+      className="h-full md:h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden"
       sx={{
-        pt: { xs: 4, sm: 12 },
-        pb: { xs: 8, sm: 16 },
-        position: "relative",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         gap: { xs: 3, sm: 6 },
+        ...(isSmallScreen && { paddingTop: 15 }),
       }}
     >
-      <Box
-        sx={{
-          width: { sm: "100%", md: "60%" },
-          textAlign: { sm: "left", md: "center" },
-        }}
-      >
+      <Box>
         <Typography component="h2" variant="h4" color="text.primary">
           <AttentionSeeker effect="pulse">Testimonials</AttentionSeeker>
         </Typography>

@@ -8,8 +8,11 @@ import Button from "@mui/material/Button";
 import DownloadIcon from "@mui/icons-material/Download";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import Divider from "@mui/material/Divider";
+import { useMediaQuery } from "@mui/material";
 
 export default function Extras() {
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+
   return (
     <Box
       id="hero"
@@ -53,7 +56,7 @@ export default function Extras() {
           <Fade delay="100">
             <Stack
               spacing={2}
-              direction="row"
+              direction={isSmallScreen ? "column"  : "row"}
               sx={{ width: "100%", justifyContent: "center" }}
             >
               <Button
@@ -65,7 +68,7 @@ export default function Extras() {
               >
                 Download Resume
               </Button>
-              <Divider orientation="vertical" variant="middle" flexItem />
+              <Divider orientation={isSmallScreen ? "horizontal"  : "vertical"} variant="middle" flexItem />
               <Button
                 variant="text"
                 size="medium"
@@ -75,7 +78,7 @@ export default function Extras() {
               >
                 Download Curriculum Vitae
               </Button>
-              <Divider orientation="vertical" variant="middle" flexItem />
+              <Divider orientation={isSmallScreen ? "horizontal"  : "vertical"} variant="middle" flexItem />
               <Button
                 variant="text"
                 size="medium"

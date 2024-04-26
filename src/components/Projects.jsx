@@ -47,7 +47,7 @@ export default function Projects() {
             "&::-webkit-scrollbar": {
               display: "none", // Hide the scrollbar by default
             },
-            p: 2,
+            zIndex: 1,
           }}
           className="flex snap-x snap-mandatory gap-x-10 pb-6"
         >
@@ -63,7 +63,7 @@ export default function Projects() {
                   component="img"
                   alt="green iguana"
                   height="140"
-                  image="src\assets\images\project.jpg"
+                  image="\images\project.jpg"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
