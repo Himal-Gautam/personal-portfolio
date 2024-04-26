@@ -24,7 +24,6 @@ export default function Skills() {
     <Box
       id="logoCollection"
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden"
-      sx={{ py: 4, ...((isSmallScreen || isMediumScreen) && { paddingTop: 15 }) }}
     >
       <Typography component="h2" variant="h4">
         <Zoom>Technologies I have used</Zoom>
@@ -62,28 +61,6 @@ export default function Skills() {
               </TableRow>
             ))}
           </TableBody>
-          {/* <TableBody>
-            {portfolioDetails.techStack.map((row, i) => (
-              <TableRow
-                key={row.type + i}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  <Fade delay={i * 3}>
-                    <b>{row.type}</b>
-                  </Fade>
-                </TableCell>
-                <TableCell align="left">
-                  <Fade delay={i * 3}>
-                    <img
-                      src={`https://skillicons.dev/icons?i=${row.technologies}&theme=${theme.palette.mode}`}
-                      alt={`${row.type} technologies`}
-                    />
-                  </Fade>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody> */}
         </Table>
       </TableContainer>
     </Box>

@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import portfolioDetails from "../data/portfolioDetails";
 
 export default function Hero() {
@@ -35,12 +35,12 @@ export default function Hero() {
           useFlexGap
           sx={{ width: "100%", textAlign: "center", margin: "auto" }}
         >
-          <Fade duration="100" cascade>
+          <Slide direction="left">
             <Typography component="h2" variant="h2">
               {portfolioDetails.name}
             </Typography>
-          </Fade>
-          <Fade duration="50" direction="left" cascade>
+          </Slide>
+          <Slide direction="right">
             <Typography
               color="primary"
               gutterBottom
@@ -57,7 +57,7 @@ export default function Hero() {
             >
               {portfolioDetails.title}
             </Typography>
-          </Fade>
+          </Slide>
           <Fade delay="75">
             <Typography
               variant="body1"

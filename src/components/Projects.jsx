@@ -9,7 +9,11 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { useMediaQuery } from "@mui/material";
+
 export default function Projects() {
+  const isSmallScreen = useMediaQuery("(max-width:450px)");
+  
   return (
     <Box
       id="pricing"
@@ -41,7 +45,7 @@ export default function Projects() {
         </Box>
         <Box
           sx={{
-            width: "calc(2/3 * 100%)",
+            width: "70%",
             margin: "auto",
             overflowX: "auto",
             "&::-webkit-scrollbar": {
@@ -53,7 +57,7 @@ export default function Projects() {
         >
           {portfolioDetails.projects.map((project) => (
             <Card
-              sx={{ maxWidth: 345, boxShadow: 5 }}
+              sx={{ maxWidth: isSmallScreen ? "100%" : 345, boxShadow: 5 }}
               key={project.name}
               className="flex-shrink-0 snap-center"
               style={{ pointerEvents: "auto" }}

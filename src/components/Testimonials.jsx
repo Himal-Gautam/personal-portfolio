@@ -35,27 +35,20 @@ export default function Testimonials() {
           and reliable support.
         </Typography> */}
       </Box>
-      <Zoom>
-        <Grid container spacing={2}>
-          {portfolioDetails.testimonials.map((testimonial, index) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              key={index}
-              sx={{ display: "flex" }}
+      <Grid container spacing={2}>
+        {portfolioDetails.testimonials.map((testimonial, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: "flex" }}>
+            <Card
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                flexGrow: 1,
+                p: 1,
+                boxShadow: 10,
+              }}
             >
-              <Card
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  flexGrow: 1,
-                  p: 1,
-                  boxShadow: 10,
-                }}
-              >
+              <Zoom>
                 <CardContent>
                   <Box
                     variant="body2"
@@ -92,11 +85,11 @@ export default function Testimonials() {
                   style={logoStyle}
                 /> */}
                 </Box>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </Zoom>
+              </Zoom>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
     </Container>
   );
 }

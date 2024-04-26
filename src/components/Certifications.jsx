@@ -7,17 +7,14 @@ import Typography from "@mui/material/Typography";
 import portfolioDetails from "../data/portfolioDetails";
 import { useTheme } from "@mui/system";
 import { Fade } from "react-awesome-reveal";
-import { useMediaQuery } from "@mui/material";
 
 export default function Certifications() {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery("(max-width:600px)");
 
   return (
     <Box
       id="certifications"
       className="h-full md:h-screen flex flex-grow flex-col space-y-8 items-center justify-center text-center"
-      sx={{ ...(isSmallScreen && { paddingTop: 15}) }}
     >
       <Container
         sx={{
@@ -29,21 +26,19 @@ export default function Certifications() {
         }}
       >
         <Box>
-          <Typography component="h2" variant="h4">
-            <Fade cascade duration="100">
+          <Fade cascade duration="100">
+            <Typography component="h2" variant="h4">
               Certifications
-            </Fade>
-          </Typography>
-          {/* <Typography variant="body1" sx={{ color: "grey.400" }}>
-            Explore why our product stands out: adaptability, durability,
-            user-friendly design, and innovation. Enjoy reliable customer
-            support and precision in every detail.
-          </Typography> */}
+            </Typography>
+            <Typography variant="body1" sx={{ color: "grey.400" }}>
+              Eagerness to be up-to-date
+            </Typography>
+          </Fade>
         </Box>
         <Grid container spacing={2.5}>
           {portfolioDetails.certifications.map((item, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              {/* <Fade cascade direction="up"> */}
+              <Fade cascade direction="up">
               <Stack
                 direction="column"
                 color="inherit"
@@ -57,11 +52,8 @@ export default function Certifications() {
                   border: "1px solid",
                   borderColor: theme === "light" ? "grey" : "grey.800",
                   boxShadow: 10,
-                  // background: "transparent",
-                  // backgroundColor: "grey.900",
                 }}
               >
-                {/* <Paper elevation={0}> */}
                 <Box
                   sx={{
                     // opacity: "50%",
@@ -90,9 +82,8 @@ export default function Certifications() {
                     {item.description}
                   </Typography>
                 </div>
-                {/* </Paper> */}
               </Stack>
-              {/* </Fade> */}
+              </Fade>
             </Grid>
           ))}
         </Grid>

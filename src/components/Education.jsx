@@ -30,16 +30,14 @@ export default function Education() {
             textAlign: "center",
           }}
         >
-          <Typography component="h2" variant="h4">
-            <Fade duration="1500" driection="down">
+          <Fade duration="1500" driection="down">
+            <Typography component="h2" variant="h4">
               Education
-            </Fade>
-          </Typography>
-          {!isSmallScreen && (
+            </Typography>
             <Typography variant="body1" sx={{ color: "grey.400" }}>
               Showcasing Academic Achievements and Expertise
             </Typography>
-          )}
+          </Fade>
         </Box>
         <Box
           sx={{
@@ -52,21 +50,18 @@ export default function Education() {
             activeStep={4}
             orientation={isSmallScreen ? "vertical" : "horizontal"}
           >
-            {portfolioDetails.education.reverse().map((level) => (
+            {portfolioDetails.education.reverse().map((level, index) => (
               <Step key={level}>
                 <StepLabel>
-                  {/* <Bounce
-                    duration="250"
-                    delay={index * 300}
-                  > */}
-                  <Typography variant="h6" component="span">
-                    <b>{level.degree}</b>
-                  </Typography>
-                  <Typography variant="subtitle1">{level.school}</Typography>
-                  <Typography variant="body1">
-                    {level.graduationYear}
-                  </Typography>
-                  {/* </Bounce> */}
+                  <Bounce duration="250" delay={index * 300}>
+                    <Typography variant="h6" component="span">
+                      <b>{level.degree}</b>
+                    </Typography>
+                    <Typography variant="subtitle1">{level.school}</Typography>
+                    <Typography variant="body1">
+                      {level.graduationYear}
+                    </Typography>
+                  </Bounce>
                 </StepLabel>
               </Step>
             ))}
