@@ -53,48 +53,118 @@ const portfolioDetails = {
   ],
   projects: [
     {
-      name: "Project 1",
+      name: "Online Shopping Store",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
-      githubLink: "https://github.com/yourusername/project1",
-      deployedLink: "https://yourproject1.com",
+        "Created a responsive website using React, focusing on learning state hooks and building a responsive online shopping site.",
+      imageLink: "/projectImages/Online-Shopping.png",
+      technologies: "css,javascript,react",
+      githubLink: "https://github.com/Himal-Gautam/React-Online-Shopping-Store",
+      deployedLink: "https://react-online-shopping-store.netlify.app/",
     },
     {
-      name: "Project 2",
+      name: "NCSC Student Management",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
-      githubLink: "https://github.com/yourusername/project2",
-      deployedLink: "https://yourproject2.com",
+        "Developed as a final year full-stack project, this system aimed to learn the MERN Stack by implementing a comprehensive student management solution for a college.",
+      imageLink: "/projectImages/NCSC-Student-Management.png",
+      technologies:
+        "html,css,typescript,javascript,react,nodejs,express,mongodb",
+      githubFrontendLink: "https://github.com/Himal-Gautam/NCSC-app",
+      githubBackendLink: "https://github.com/Himal-Gautam/NCSC-Server",
+      deployedLink: "https://ncsc-student-management.netlify.app/",
+    },
+
+    {
+      name: "Task Manager",
+      description:
+        "Designed a task management application to help users organize and prioritize their tasks effectively.",
+      technologies: "html,css,javascript,react,nodejs,express,mongodb",
+      githubFrontendLink: "https://github.com/Himal-Gautam/Task-Manager-App",
+      githubBackendLink: "https://github.com/Himal-Gautam/task-manager-server",
+      deployedLink: "https://task-manager-full-stack-project.netlify.app/",
     },
     {
-      name: "Project 3",
+      name: "Markdown Viewer",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
-      githubLink: "https://github.com/yourusername/project3",
-      deployedLink: "https://yourproject3.com",
+        "Created a tool that enables users to preview Markdown text in real-time, simplifying the process of formatting and styling text.",
+      imageLink: "/projectImages/Mark-Down-Viewer.png",
+      technologies: "html,css,javascript,react,nodejs,express,mongodb",
+      githubFrontendLink:
+        "https://github.com/Himal-Gautam/markdown-viewer-frontend",
+      githubBackendLink:
+        "https://github.com/Himal-Gautam/markdown-viewer-backend",
+      deployedLink: "https://markdown-viewer-full-stack-project.netlify.app/",
     },
     {
-      name: "Project 4",
+      name: "Hotel Room Booking Application",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
-      githubLink: "https://github.com/yourusername/project4",
-      deployedLink: "https://yourproject4.com",
+        "Implemented microservices-based backend architecture for a hotel room booking application, focusing on scalability and maintainability. ",
+      imageLink: "/projectImages/Hotel-Room-Booking-Application.png",
+      technologies: "java,spring",
+      githubLink: "https://github.com/Himal-Gautam/Sweet-home",
     },
     {
-      name: "Project 5",
+      name: "URL Shortener",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
-      githubLink: "https://github.com/yourusername/project5",
-      deployedLink: "https://yourproject5.com",
+        "Built a URL shortening service, allowing users to shorten long URLs into more manageable ones.",
+      technologies: "html,css,javascript,react,nodejs,express,mongodb",
+      githubFrontendLink:
+        "https://github.com/Himal-Gautam/url-shortner-frontend",
+      githubBackendLink: "https://github.com/Himal-Gautam/url-shortner-server",
+      // deployedLink: "https://url-shortner-full-stack-project.netlify.app/",
     },
     {
-      name: "Project 6",
+      name: "Book My Movie",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius magna. Duis dapibus risus ut magna laoreet, et malesuada mauris sodales.",
-      githubLink: "https://github.com/yourusername/project6",
-      deployedLink: "https://yourproject6.com",
+        "Developed a platform where users can explore upcoming and released movies, view movie details, and book show tickets, enhancing the movie-watching experience.",
+      imageLink: "/projectImages/Book-My-Movie.png",
+      technologies: "html,css,javascript,react",
+      githubLink: "https://github.com/Himal-Gautam/BookMovieApp",
+      deployedLink: "https://book-movie-app-pgp-frontend-project.netlify.app/",
     },
-    // Add more projects if needed
+    {
+      name: "Restaurant Apllication",
+      description:
+        "Created a Java-based restaurant application as a project during PGP, focusing on functionalities such as menu management and order processing.",
+      technologies: "java,spring",
+      githubLink: "https://github.com/Himal-Gautam/Gautam_Himal_C3_Project",
+    },
+    {
+      name: "Book My Consultation App",
+      description:
+        "Capstone project for PGP in Software Development, enabling users to consult healthcare specialists remotely, emphasizing accessibility and convenience.",
+      imageLink: "/projectImages/Book-My-Consultation.png",
+      technologies: "html,css,javascript,react,java,spring",
+      githubFrontendLink:
+        "https://github.com/Himal-Gautam/BookMyConsultationUI",
+      githubBackendLink: "https://github.com/Himal-Gautam/bookmyconsultation",
+    },
+    {
+      name: "Design Patterns",
+      description:
+        "Designed an application that retrieves disease statistics using design patterns, integrating data from various APIs and implementing filtering mechanisms.",
+      technologies: "java,spring",
+      githubLink: "https://github.com/Himal-Gautam/patterns",
+    },
+    {
+      name: "Web Scrapper",
+      description:
+        "Developed an e-commerce scraping application to extract product data from various websites, facilitating searching items by creating own dataset.",
+      technologies: "html,css,javascript,react,nodejs,express,mongodb",
+      githubFrontendLink: "https://github.com/Himal-Gautam/web-scrapper-ui",
+      githubBackendLink: "https://github.com/Himal-Gautam/web-scrapper-server",
+      deployedLink:
+        "https://ecommerce-scrapper-full-stack-project.netlify.app/",
+    },
+    {
+      name: "Disposable Mail Checker",
+      description:
+        "Used a 3rd-party API to create a front end for checking if an email address is disposable or not, enhancing email validation processes.",
+      imageLink: "/projectImages/Disposable-Mail-Checker.png",
+      technologies: "html,css,javascript",
+      githubLink:
+        "https://github.com/Himal-Gautam/Use-Disposable-Email-Checker-API",
+      deployedLink: "https://disposable-mail-checker.netlify.app/",
+    },
   ],
   techStack: [
     {
@@ -130,8 +200,8 @@ const portfolioDetails = {
     { network: "linkedin", url: "https://www.linkedin.com/in/himal-gautam/" },
     { network: "email", url: "mailto:himal.developer.job@gmail.com" },
     { network: "twitter", url: "https://twitter.com/_himal_gautam" },
-    { network: "medium", url: "https://medium.com/@himalpgautam" },
-    { network: "instagram", url: "https://www.instagram.com/_himal_gautam" },
+    // { network: "medium", url: "https://medium.com/@himalpgautam" },
+    // { network: "instagram", url: "https://www.instagram.com/_himal_gautam" },
   ],
   certifications: [
     {

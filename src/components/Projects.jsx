@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import portfolioDetails from "../data/portfolioDetails";
-import { Zoom, JackInTheBox } from "react-awesome-reveal";
+import { JackInTheBox } from "react-awesome-reveal";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -9,11 +9,14 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { useMediaQuery } from "@mui/material";
+import { Container, useMediaQuery } from "@mui/material";
+import WarningIcon from "@mui/icons-material/Warning";
+import { useTheme } from "@mui/system";
 
 export default function Projects() {
   const isSmallScreen = useMediaQuery("(max-width:450px)");
-  
+  const theme = useTheme();
+
   return (
     <Box
       id="pricing"
@@ -39,8 +42,14 @@ export default function Projects() {
               Projects
             </JackInTheBox>
           </Typography>
-          <Typography variant="body1" sx={{ color: "grey.400" }}>
-            Press Shift key to scroll through projects
+          {!isSmallScreen && (
+            <Typography variant="body1" sx={{ color: "grey.400" }}>
+              Press Shift key to scroll through projects
+            </Typography>
+          )}
+          <Typography variant="caption" sx={{ color: "grey.400" }}>
+            <WarningIcon fontSize="small" color="warning" /> Some deployed links
+            might not work due to old/imcompatible code - will be updated soon
           </Typography>
         </Box>
         <Box
@@ -57,44 +66,82 @@ export default function Projects() {
         >
           {portfolioDetails.projects.map((project) => (
             <Card
-              sx={{ maxWidth: isSmallScreen ? "100%" : 345, boxShadow: 5 }}
+              sx={{
+                maxWidth: isSmallScreen ? "100%" : 345,
+                boxShadow: 5,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
               key={project.name}
               className="flex-shrink-0 snap-center"
               style={{ pointerEvents: "auto" }}
             >
-              <Zoom duration="100">
-                <CardMedia
-                  component="img"
-                  alt="green iguana"
-                  height="140"
-                  image="\images\project.jpg"
-                  loading="lazy"
+              <CardMedia
+                component="img"
+                alt={`${project.name} image`}
+                height="140"
+                image={
+                  project.imageLink ? project.imageLink : "/images/project.jpg"
+                }
+                loading="lazy"
+              />
+              <CardContent style={{ flexGrow: 1 }}>
+                <Typography gutterBottom variant="h5" component="div">
+                  {project.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {project.description}
+                </Typography>
+              </CardContent>
+              <Container>
+                <img
+                  src={
+                    `https://skillicons.dev/icons?i=${project.technologies}&theme=${theme.palette.mode}`
+                  }
+                  alt={`${project.name} technologies`}
                 />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {project.name}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {project.description}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button
-                    variant="outlined"
-                    // startIcon={<GitHubIcon />}
-                    startIcon={<OpenInNewIcon />}
-                  >
-                    {" Open "}
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    startIcon={<GitHubIcon />}
-                    // endIcon={<OpenInNewIcon />}
-                  >
-                    Github
-                  </Button>
-                </CardActions>
-              </Zoom>
+              </Container>
+              <CardActions
+              >
+                  {project.deployedLink && (
+                    <Button
+                      variant="outlined"
+                      // style={{ marginBottom: 3 }}
+                      startIcon={isSmallScreen ? null : <OpenInNewIcon />}
+                      // sx={{ ...(isSmallScreen && { marginLeft: 1 }) }}
+                    >
+                      {" Open "}
+                    </Button>
+                  )}
+                  {project.githubLink && (
+                    <Button
+                      variant="outlined"
+                      startIcon={!isSmallScreen ? <GitHubIcon /> : null}
+                      // sx={{ ...(isSmallScreen && { maxWidth: "50%" }) }}
+                    >
+                      {" Github "}
+                    </Button>
+                  )}
+                  {project.githubFrontendLink && (
+                    <Button
+                      variant="outlined"
+                      startIcon={!isSmallScreen ? <GitHubIcon /> : null}
+                      // sx={{ ...(isSmallScreen && { maxWidth: "50%" }) }}
+                    >
+                      {" Frontend "}
+                    </Button>
+                  )}
+                  {project.githubBackendLink && (
+                    <Button
+                      variant="outlined"
+                      startIcon={!isSmallScreen ? <GitHubIcon /> : null}
+                      // sx={{ ...(isSmallScreen && { maxWidth: "50%" }) }}
+                    >
+                      {" Backend "}
+                    </Button>
+                  )}
+              </CardActions>
             </Card>
           ))}
         </Box>
