@@ -13,7 +13,7 @@ const SocialIcons = ({ mode }) => {
     <>
       {" "}
       <Box sx={{ w: 10 }}>
-        <Box className="fixed bottom-0 left-0 w-screen p-5" sx={{ w: 10 }}>
+        <Box className="fixed bottom-0 left-0 p-5" sx={{ w: 10 }}>
           <Stack direction="column" spacing={2} sx={{ w: 40}}>
             {portfolioDetails.socialLinks.map((social) => (
               <SocialIcon

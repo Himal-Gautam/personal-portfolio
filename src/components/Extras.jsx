@@ -1,4 +1,3 @@
-import { alpha } from "@mui/material";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
@@ -9,6 +8,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import Divider from "@mui/material/Divider";
 import { useMediaQuery } from "@mui/material";
+import portfolioDetails from "../data/portfolioDetails";
 
 export default function Extras() {
   const isSmallScreen = useMediaQuery("(max-width:600px)");
@@ -33,9 +33,7 @@ export default function Extras() {
           sx={{ width: { xs: "100%", sm: "70%" }, textAlign: "center" }}
         >
           <Typography component="h2" variant="h2">
-            <JackInTheBox>
-              Wanna Work with me?
-            </JackInTheBox>
+            <JackInTheBox duration="500">Wanna Work with me?</JackInTheBox>
           </Typography>
           <Typography
             color="primary"
@@ -49,43 +47,49 @@ export default function Extras() {
                   : "primary.dark",
             }}
           >
-            <Rotate>
-              Here are useful Links
-            </Rotate>
+            <Rotate duration="500">Here are useful Links</Rotate>
           </Typography>
-          <Fade delay="100">
+          <Fade delay="25">
             <Stack
               spacing={2}
-              direction={isSmallScreen ? "column"  : "row"}
+              direction={isSmallScreen ? "column" : "row"}
               sx={{ width: "100%", justifyContent: "center" }}
             >
               <Button
                 variant="text"
                 size="medium"
                 startIcon={<DownloadIcon />}
-                href="https://drive.google.com/file/d/14ZLQA7Ontottoi3y3qj08R2RB8rwp9-y/view?usp=sharing"
+                href={portfolioDetails.details.resume}
                 target="_blank"
               >
                 Download Resume
               </Button>
-              <Divider orientation={isSmallScreen ? "horizontal"  : "vertical"} variant="middle" flexItem />
+              <Divider
+                orientation={isSmallScreen ? "horizontal" : "vertical"}
+                variant="middle"
+                flexItem
+              />
               <Button
                 variant="text"
                 size="medium"
                 startIcon={<DownloadIcon />}
-                href="https://drive.google.com/file/d/1-DH4kLW5fS3dKUbphQUrs-F4SlHSKGE5/view?usp=sharing"
+                href={portfolioDetails.details.CV}
                 target="_blank"
               >
                 Download Curriculum Vitae
               </Button>
-              <Divider orientation={isSmallScreen ? "horizontal"  : "vertical"} variant="middle" flexItem />
+              <Divider
+                orientation={isSmallScreen ? "horizontal" : "vertical"}
+                variant="middle"
+                flexItem
+              />
               <Button
                 variant="text"
                 size="medium"
                 startIcon={<ContactSupportIcon />}
-                href="mailto:himal.developer.job@gmail.com"
+                href={portfolioDetails.details.mail}
               >
-                  Contact Me
+                Contact Me
               </Button>
             </Stack>
           </Fade>

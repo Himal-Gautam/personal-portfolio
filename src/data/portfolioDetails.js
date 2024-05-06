@@ -1,13 +1,16 @@
 // portfolio.js
 
 const portfolioDetails = {
-  name: "Himal Gautam",
-  title: "Full Stack Software Developer",
-  // about:
-  //   "Results-oriented Full Stack Developer with a solid background in computer science, dedicated to optimizing your organization's digital presence. Proficient in a diverse range of programming languages and cutting-edge technologies. Eager to embrace new challenges, continually expand my skill set, and drive innovation. Let's connect to discuss how I can contribute to your team's success and growth.",
-  about:
-    "Dynamic software developer with over 1+ year of experience in software development, currently pursuing a Master's degree in Computer Science. Demonstrated expertise in technical problem-solving and a passion for technology. Seeking to leverage skills and academic background to excel and contributing to the future of flight innovation while honing leadership abilities and technical acumen.",
-  contact: {},
+  details: {
+    name: "Himal Gautam",
+    title: "Full Stack Software Developer",
+    about:
+      "Dynamic software developer with over 1+ year of experience in software development, currently pursuing a Master's degree in Computer Science. Demonstrated expertise in technical problem-solving and a passion for technology. Seeking to leverage skills and academic background to excel and contributing to the future of flight innovation while honing leadership abilities and technical acumen.",
+    resume:
+      "https://drive.google.com/file/d/14ZLQA7Ontottoi3y3qj08R2RB8rwp9-y/view?usp=sharing",
+    CV: "https://drive.google.com/file/d/1-DH4kLW5fS3dKUbphQUrs-F4SlHSKGE5/view?usp=sharing",
+    mail: "mailto:himal.developer.job@gmail.com",
+  },
   experiences: [
     {
       position: "Full Stack Developer",

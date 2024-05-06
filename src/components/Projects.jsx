@@ -60,7 +60,7 @@ export default function Projects() {
             "&::-webkit-scrollbar": {
               display: "none", // Hide the scrollbar by default
             },
-            zIndex: 1,
+            // zIndex: 1,
           }}
           className="flex snap-x snap-mandatory gap-x-10 pb-6"
         >
@@ -96,51 +96,51 @@ export default function Projects() {
               </CardContent>
               <Container>
                 <img
-                  src={
-                    `https://skillicons.dev/icons?i=${project.technologies}&theme=${theme.palette.mode}`
-                  }
+                  src={`https://skillicons.dev/icons?i=${project.technologies}&theme=${theme.palette.mode}`}
                   alt={`${project.name} technologies`}
                 />
               </Container>
-              <CardActions
-              >
-                  {project.deployedLink && (
-                    <Button
-                      variant="outlined"
-                      // style={{ marginBottom: 3 }}
-                      startIcon={isSmallScreen ? null : <OpenInNewIcon />}
-                      // sx={{ ...(isSmallScreen && { marginLeft: 1 }) }}
-                    >
-                      {" Open "}
-                    </Button>
-                  )}
-                  {project.githubLink && (
-                    <Button
-                      variant="outlined"
-                      startIcon={!isSmallScreen ? <GitHubIcon /> : null}
-                      // sx={{ ...(isSmallScreen && { maxWidth: "50%" }) }}
-                    >
-                      {" Github "}
-                    </Button>
-                  )}
-                  {project.githubFrontendLink && (
-                    <Button
-                      variant="outlined"
-                      startIcon={!isSmallScreen ? <GitHubIcon /> : null}
-                      // sx={{ ...(isSmallScreen && { maxWidth: "50%" }) }}
-                    >
-                      {" Frontend "}
-                    </Button>
-                  )}
-                  {project.githubBackendLink && (
-                    <Button
-                      variant="outlined"
-                      startIcon={!isSmallScreen ? <GitHubIcon /> : null}
-                      // sx={{ ...(isSmallScreen && { maxWidth: "50%" }) }}
-                    >
-                      {" Backend "}
-                    </Button>
-                  )}
+              <CardActions>
+                {project.deployedLink && (
+                  <Button
+                    variant="outlined"
+                    startIcon={isSmallScreen ? null : <OpenInNewIcon />}
+                    href={project.deployedLink}
+                    target="_blank"
+                  >
+                    {" Open "}
+                  </Button>
+                )}
+                {project.githubLink && (
+                  <Button
+                    variant="outlined"
+                    startIcon={!isSmallScreen ? <GitHubIcon /> : null}
+                    href={project.githubLink}
+                    target="_blank"
+                  >
+                    {" Github "}
+                  </Button>
+                )}
+                {project.githubFrontendLink && (
+                  <Button
+                    variant="outlined"
+                    startIcon={!isSmallScreen ? <GitHubIcon /> : null}
+                    href={project.githubFrontendLink}
+                    target="_blank"
+                  >
+                    {" Frontend "}
+                  </Button>
+                )}
+                {project.githubBackendLink && (
+                  <Button
+                    variant="outlined"
+                    startIcon={!isSmallScreen ? <GitHubIcon /> : null}
+                    href={project.githubBackendLink}
+                    target="_blank"
+                  >
+                    {" Backend "}
+                  </Button>
+                )}
               </CardActions>
             </Card>
           ))}

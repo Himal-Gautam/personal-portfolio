@@ -37,7 +37,7 @@ export default function Hero() {
         >
           <Slide direction="left">
             <Typography component="h2" variant="h2">
-              {portfolioDetails.name}
+              {portfolioDetails.details.name}
             </Typography>
           </Slide>
           <Slide direction="right">
@@ -55,7 +55,7 @@ export default function Hero() {
                     : "primary.dark",
               }}
             >
-              {portfolioDetails.title}
+              {portfolioDetails.details.title}
             </Typography>
           </Slide>
           <Fade delay="75">
@@ -64,7 +64,7 @@ export default function Hero() {
               textAlign="center"
               color="text.secondary"
             >
-              {portfolioDetails.about}
+              {portfolioDetails.details.about}
             </Typography>
           </Fade>
         </Stack>
