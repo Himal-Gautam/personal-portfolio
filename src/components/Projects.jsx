@@ -62,7 +62,7 @@ export default function Projects() {
             },
             // zIndex: 1,
           }}
-          className="flex snap-x snap-mandatory gap-x-10 pb-6"
+          className="flex snap-x snap-mandatory gap-x-10"
         >
           {portfolioDetails.projects.map((project) => (
             <Card

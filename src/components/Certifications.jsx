@@ -9,6 +9,9 @@ import { useTheme } from "@mui/system";
 import { Fade } from "react-awesome-reveal";
 import { useMediaQuery } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+import Link from "@mui/material/Link";
 
 export default function Certifications() {
   const theme = useTheme();
@@ -56,6 +59,7 @@ export default function Certifications() {
                     border: "1px solid",
                     borderColor: theme === "light" ? "grey" : "grey.800",
                     boxShadow: 10,
+                    position: "relative",
                   }}
                 >
                   <Box
@@ -87,7 +91,26 @@ export default function Certifications() {
                       {item.description}
                     </Typography>
                   </div>
-                 
+                  <Box
+                    id="link"
+                    sx={{
+                      position: "absolute",
+                      top: 3,
+                      right: 3,
+                      textAlign: "right", // Align the link content within the box
+                    }}
+                  >
+                    <Link href={item.link} target="_blank">
+                      <Tooltip title="View Cerificate" placement="left">
+                        <IconButton>
+                          <OpenInNewIcon
+                            // onClick={() => window.open(item.link)}
+                            // sx={{ cursor: "pointer" }}
+                          />
+                        </IconButton>
+                      </Tooltip>
+                    </Link>
+                  </Box>
                 </Stack>
               </Fade>
             </Grid>
