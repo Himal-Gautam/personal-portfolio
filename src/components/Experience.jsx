@@ -19,6 +19,7 @@ export default function Experience() {
     <Box
       id="pricing"
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center oveflow-hidden"
+      sx={{ ...(isSmallScreen && { paddingTop: 15 }) }}
     >
       <Container
         sx={{

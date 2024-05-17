@@ -7,14 +7,18 @@ import Typography from "@mui/material/Typography";
 import portfolioDetails from "../data/portfolioDetails";
 import { useTheme } from "@mui/system";
 import { Fade } from "react-awesome-reveal";
+import { useMediaQuery } from "@mui/material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 export default function Certifications() {
   const theme = useTheme();
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
 
   return (
     <Box
       id="certifications"
       className="h-full md:h-screen flex flex-grow flex-col space-y-8 items-center justify-center text-center"
+      sx={{ ...(isSmallScreen && { paddingTop: 15 }) }}
     >
       <Container
         sx={{
@@ -83,6 +87,7 @@ export default function Certifications() {
                       {item.description}
                     </Typography>
                   </div>
+                 
                 </Stack>
               </Fade>
             </Grid>

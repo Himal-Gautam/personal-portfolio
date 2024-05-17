@@ -209,36 +209,42 @@ const portfolioDetails = {
   certifications: [
     {
       issuer: "Google",
+      link: "https://www.credly.com/badges/bc9b2b75-d1ec-4f77-922a-8a681af0da5c",
       title: "Foundations of Project Management",
       description:
         "Completed Foundations of Project Management. Equipped with skills to streamline tasks and boost efficiency.",
     },
     {
       issuer: "Microsoft",
+      link: "https://www.credly.com/badges/bc9b2b75-d1ec-4f77-922a-8a681af0da5c",
       title: "MTA: Introduction to Programming Using Python",
       description:
         "Successfully passed MTA: Introduction to Python. Ready for advanced programming projects.",
     },
     {
       issuer: "Amazon-Web-Services",
+      link: "https://drive.google.com/file/d/1_Y5l5gdYW_mJ0B8fMBFhwGangqUR8xmP/view?usp=sharing",
       title: "AWS Cloud Practitioner Essentials (Course Completion)",
       description:
         "Mastered AWS Cloud Practitioner Essentials. Ready to optimize cloud resources.",
     },
     {
       issuer: "Oracle",
+      link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=49B9F8790D29B45BA49166E1C084353B28BE663F1FEEBCE99288844E2269E46A",
       title: "Oracle Cloud Infrastructure 2023 Certified Foundations Associate",
       description:
         "Achieved Oracle Cloud Infrastructure 2023 Certified Foundations Associate. Ready to contribute to cloud projects.",
     },
     {
       issuer: "Guvi",
+      link: "https://drive.google.com/file/d/1FEH2VSJ5aSPoBZvBfUrICs_NGWmPeo1v/view?usp=sharing",
       title: "Full Stack MERN Web Developer",
       description:
-        "Completed Full Stack MERN Web Developer program. Prepared for roles in web development.",
+        "Completed Full Stack MERN Web Developer program. Prepared for roles in web development. Learned about multiple technologies related to web development.",
     },
     {
       issuer: "Hacker-Rank",
+      link: "https://drive.google.com/drive/folders/1cjv_fa4z4uqMfx21Z079MdfYaYdbWYmG?usp=sharing",
       title:
         "Python (Basics), JavaScript (Basics), React (Basics), SQL (Basics)",
       description:
