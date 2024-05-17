@@ -103,10 +103,7 @@ export default function Certifications() {
                     <Link href={item.link} target="_blank">
                       <Tooltip title="View Cerificate" placement="left">
                         <IconButton>
-                          <OpenInNewIcon
-                            // onClick={() => window.open(item.link)}
-                            // sx={{ cursor: "pointer" }}
-                          />
+                          <OpenInNewIcon />
                         </IconButton>
                       </Tooltip>
                     </Link>

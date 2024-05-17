@@ -59,21 +59,26 @@ const portfolioDetails = {
       name: "Online Shopping Store",
       description:
         "Created a responsive website using React, focusing on learning state hooks and building a responsive online shopping site.",
-      imageLink: "/projectImages/Online-Shopping.png",
+      image: "/projectImages/Online-Shopping.png",
       technologies: "css,javascript,react",
-      githubLink: "https://github.com/Himal-Gautam/React-Online-Shopping-Store",
-      deployedLink: "https://react-online-shopping-store.netlify.app/",
+      links: {
+        github_Link:
+          "https://github.com/Himal-Gautam/React-Online-Shopping-Store",
+        deployed_Link: "https://react-online-shopping-store.netlify.app/",
+      },
     },
     {
       name: "NCSC Student Management",
       description:
         "Developed as a final year full-stack project, this system aimed to learn the MERN Stack by implementing a comprehensive student management solution for a college.",
-      imageLink: "/projectImages/NCSC-Student-Management.png",
+      image: "/projectImages/NCSC-Student-Management.png",
       technologies:
         "html,css,typescript,javascript,react,nodejs,express,mongodb",
-      githubFrontendLink: "https://github.com/Himal-Gautam/NCSC-app",
-      githubBackendLink: "https://github.com/Himal-Gautam/NCSC-Server",
-      deployedLink: "https://ncsc-student-management.netlify.app/",
+      links: {
+        github_Frontend_Link: "https://github.com/Himal-Gautam/NCSC-app",
+        github_Backend_Link: "https://github.com/Himal-Gautam/NCSC-Server",
+        deployed_Link: "https://ncsc-student-management.netlify.app/",
+      },
     },
 
     {
@@ -81,92 +86,116 @@ const portfolioDetails = {
       description:
         "Designed a task management application to help users organize and prioritize their tasks effectively.",
       technologies: "html,css,javascript,react,nodejs,express,mongodb",
-      githubFrontendLink: "https://github.com/Himal-Gautam/Task-Manager-App",
-      githubBackendLink: "https://github.com/Himal-Gautam/task-manager-server",
-      deployedLink: "https://task-manager-full-stack-project.netlify.app/",
+      links: {
+        github_Frontend_Link: "https://github.com/Himal-Gautam/Task-Manager-App",
+        github_Backend_Link:
+          "https://github.com/Himal-Gautam/task-manager-server",
+        deployed_Link: "https://task-manager-full-stack-project.netlify.app/",
+      },
     },
     {
       name: "Markdown Viewer",
       description:
         "Created a tool that enables users to preview Markdown text in real-time, simplifying the process of formatting and styling text.",
-      imageLink: "/projectImages/Mark-Down-Viewer.png",
+      image: "/projectImages/Mark-Down-Viewer.png",
       technologies: "html,css,javascript,react,nodejs,express,mongodb",
-      githubFrontendLink:
-        "https://github.com/Himal-Gautam/markdown-viewer-frontend",
-      githubBackendLink:
-        "https://github.com/Himal-Gautam/markdown-viewer-backend",
-      deployedLink: "https://markdown-viewer-full-stack-project.netlify.app/",
+      links: {
+        github_Frontend_Link:
+          "https://github.com/Himal-Gautam/markdown-viewer-frontend",
+        github_Backend_Link:
+          "https://github.com/Himal-Gautam/markdown-viewer-backend",
+        deployed_Link: "https://markdown-viewer-full-stack-project.netlify.app/",
+      },
     },
     {
       name: "Hotel Room Booking Application",
       description:
         "Implemented microservices-based backend architecture for a hotel room booking application, focusing on scalability and maintainability. ",
-      imageLink: "/projectImages/Hotel-Room-Booking-Application.png",
+      image: "/projectImages/Hotel-Room-Booking-Application.png",
       technologies: "java,spring",
-      githubLink: "https://github.com/Himal-Gautam/Sweet-home",
+      links: {
+        github_Link: "https://github.com/Himal-Gautam/Sweet-home",
+      },
     },
     {
       name: "URL Shortener",
       description:
         "Built a URL shortening service, allowing users to shorten long URLs into more manageable ones.",
       technologies: "html,css,javascript,react,nodejs,express,mongodb",
-      githubFrontendLink:
-        "https://github.com/Himal-Gautam/url-shortner-frontend",
-      githubBackendLink: "https://github.com/Himal-Gautam/url-shortner-server",
-      // deployedLink: "https://url-shortner-full-stack-project.netlify.app/",
+      links: {
+        github_Frontend_Link:
+          "https://github.com/Himal-Gautam/url-shortner-frontend",
+        github_Backend_Link:
+          "https://github.com/Himal-Gautam/url-shortner-server",
+        // deployed_Link: "https://url-shortner-full-stack-project.netlify.app/",
+      },
     },
     {
       name: "Book My Movie",
       description:
         "Developed a platform where users can explore upcoming and released movies, view movie details, and book show tickets, enhancing the movie-watching experience.",
-      imageLink: "/projectImages/Book-My-Movie.png",
+      image: "/projectImages/Book-My-Movie.png",
       technologies: "html,css,javascript,react",
-      githubLink: "https://github.com/Himal-Gautam/BookMovieApp",
-      deployedLink: "https://book-movie-app-pgp-frontend-project.netlify.app/",
+      links: {
+        github_Link: "https://github.com/Himal-Gautam/BookMovieApp",
+        deployed_Link:
+          "https://book-movie-app-pgp-frontend-project.netlify.app/",
+      },
     },
     {
       name: "Restaurant Apllication",
       description:
         "Created a Java-based restaurant application as a project during PGP, focusing on functionalities such as menu management and order processing.",
       technologies: "java,spring",
-      githubLink: "https://github.com/Himal-Gautam/Gautam_Himal_C3_Project",
+      links: {
+        github_Link: "https://github.com/Himal-Gautam/Gautam_Himal_C3_Project",
+      },
     },
     {
       name: "Book My Consultation App",
       description:
         "Capstone project for PGP in Software Development, enabling users to consult healthcare specialists remotely, emphasizing accessibility and convenience.",
-      imageLink: "/projectImages/Book-My-Consultation.png",
+      image: "/projectImages/Book-My-Consultation.png",
       technologies: "html,css,javascript,react,java,spring",
-      githubFrontendLink:
-        "https://github.com/Himal-Gautam/BookMyConsultationUI",
-      githubBackendLink: "https://github.com/Himal-Gautam/bookmyconsultation",
+      links: {
+        github_Frontend_Link:
+          "https://github.com/Himal-Gautam/BookMyConsultationUI",
+        github_Backend_Link: "https://github.com/Himal-Gautam/bookmyconsultation",
+      },
     },
     {
       name: "Design Patterns",
       description:
         "Designed an application that retrieves disease statistics using design patterns, integrating data from various APIs and implementing filtering mechanisms.",
       technologies: "java,spring",
-      githubLink: "https://github.com/Himal-Gautam/patterns",
+      links: {
+        github_Link: "https://github.com/Himal-Gautam/patterns",
+      },
     },
     {
       name: "Web Scrapper",
       description:
         "Developed an e-commerce scraping application to extract product data from various websites, facilitating searching items by creating own dataset.",
       technologies: "html,css,javascript,react,nodejs,express,mongodb",
-      githubFrontendLink: "https://github.com/Himal-Gautam/web-scrapper-ui",
-      githubBackendLink: "https://github.com/Himal-Gautam/web-scrapper-server",
-      deployedLink:
-        "https://ecommerce-scrapper-full-stack-project.netlify.app/",
+      links: {
+        github_Frontend_Link: "https://github.com/Himal-Gautam/web-scrapper-ui",
+        github_Backend_Link:
+          "https://github.com/Himal-Gautam/web-scrapper-server",
+        deployed_Link:
+          "https://ecommerce-scrapper-full-stack-project.netlify.app/",
+      },
     },
     {
       name: "Disposable Mail Checker",
       description:
         "Used a 3rd-party API to create a front end for checking if an email address is disposable or not, enhancing email validation processes.",
-      imageLink: "/projectImages/Disposable-Mail-Checker.png",
+      image: "/projectImages/Disposable-Mail-Checker.png",
       technologies: "html,css,javascript",
-      githubLink:
-        "https://github.com/Himal-Gautam/Use-Disposable-Email-Checker-API",
-      deployedLink: "https://disposable-mail-checker.netlify.app/",
+      links: {
+        github_Link:
+          "https://github.com/Himal-Gautam/Use-Disposable-Email-Checker-API",
+        deployed_Link: "https://disposable-mail-checker.netlify.app/",
+      },
     },
   ],
   techStack: [
