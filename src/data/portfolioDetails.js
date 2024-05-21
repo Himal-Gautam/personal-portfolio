@@ -56,15 +56,30 @@ const portfolioDetails = {
   ],
   projects: [
     {
-      name: "Online Shopping Store",
+      name: "Movie App (IMDB)",
       description:
-        "Created a responsive website using React, focusing on learning state hooks and building a responsive online shopping site.",
-      image: "/projectImages/Online-Shopping.png",
-      technologies: "css,javascript,react",
+        "For my final project in the MERN Stack course, I developed a movie rating site that enables users to perform CRUD operations on movies and rate them.",
+      technologies: "html,css,javascript,react,nodejs,express,mongodb",
+      image: "/projectImages/movie-app.png",
       links: {
-        github_Link:
-          "https://github.com/Himal-Gautam/React-Online-Shopping-Store",
-        deployed_Link: "https://react-online-shopping-store.netlify.app/",
+        github_Frontend_Link: "https://github.com/Himal-Gautam/react-movie-app",
+        github_Backend_Link:
+          "https://github.com/Himal-Gautam/movie-app-node_server",
+        deployed_Link:
+          "https://movie-app-full-stack-project.netlify.app/movielist",
+      },
+    },
+
+    {
+      name: "Plant Protection Association Of Gujarat",
+      description:
+        "Made a draft frontend site for a government project where they want to update thier old website.",
+      image: "/projectImages/PPAOG.png",
+      technologies: "html,css,javascript,react",
+      links: {
+        github_Link: "https://github.com/Himal-Gautam/PPAOG",
+        deployed_Link:
+          "https://plant-protection-association-gujarat.netlify.app/home",
       },
     },
     {
@@ -87,10 +102,23 @@ const portfolioDetails = {
         "Designed a task management application to help users organize and prioritize their tasks effectively.",
       technologies: "html,css,javascript,react,nodejs,express,mongodb",
       links: {
-        github_Frontend_Link: "https://github.com/Himal-Gautam/Task-Manager-App",
+        github_Frontend_Link:
+          "https://github.com/Himal-Gautam/Task-Manager-App",
         github_Backend_Link:
           "https://github.com/Himal-Gautam/task-manager-server",
         deployed_Link: "https://task-manager-full-stack-project.netlify.app/",
+      },
+    },
+    {
+      name: "Online Shopping Store",
+      description:
+        "Created a responsive website using React, focusing on learning state hooks and building a responsive online shopping site.",
+      image: "/projectImages/Online-Shopping.png",
+      technologies: "css,javascript,react",
+      links: {
+        github_Link:
+          "https://github.com/Himal-Gautam/React-Online-Shopping-Store",
+        deployed_Link: "https://react-online-shopping-store.netlify.app/",
       },
     },
     {
@@ -104,7 +132,8 @@ const portfolioDetails = {
           "https://github.com/Himal-Gautam/markdown-viewer-frontend",
         github_Backend_Link:
           "https://github.com/Himal-Gautam/markdown-viewer-backend",
-        deployed_Link: "https://markdown-viewer-full-stack-project.netlify.app/",
+        deployed_Link:
+          "https://markdown-viewer-full-stack-project.netlify.app/",
       },
     },
     {
@@ -160,7 +189,8 @@ const portfolioDetails = {
       links: {
         github_Frontend_Link:
           "https://github.com/Himal-Gautam/BookMyConsultationUI",
-        github_Backend_Link: "https://github.com/Himal-Gautam/bookmyconsultation",
+        github_Backend_Link:
+          "https://github.com/Himal-Gautam/bookmyconsultation",
       },
     },
     {
