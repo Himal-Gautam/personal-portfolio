@@ -268,7 +268,7 @@ const portfolioDetails = {
   certifications: [
     {
       issuer: "Google",
-      link: "https://www.credly.com/badges/bc9b2b75-d1ec-4f77-922a-8a681af0da5c",
+      link: "https://coursera.org/share/5e91e69874b3f08fe5d88c753297c561",
       title: "Foundations of Project Management",
       description:
         "Completed Foundations of Project Management. Equipped with skills to streamline tasks and boost efficiency.",
@@ -296,7 +296,7 @@ const portfolioDetails = {
     },
     {
       issuer: "Guvi",
-      link: "https://drive.google.com/file/d/1FEH2VSJ5aSPoBZvBfUrICs_NGWmPeo1v/view?usp=sharing",
+      link: "https://www.guvi.in/share-certificate/t6RJH1v19e2j07305K",
       title: "Full Stack MERN Web Developer",
       description:
         "Completed Full Stack MERN Web Developer program. Prepared for roles in web development. Learned about multiple technologies related to web development.",
