@@ -16,7 +16,7 @@ const portfolioDetails = {
   experiences: [
     {
       position: "Software Development Engineer 1",
-      company: "Aptachain Solutions Pvt. Ltd.",
+      company: "Momentum-E",
       duration: "July 2024 - Current",
       location: "Bangalore (remote)",
       description: `⦿ Contributing to the development of an in-house EV industry product using Next.js and Prisma.
