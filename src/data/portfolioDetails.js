@@ -1,11 +1,13 @@
 // portfolio.js
 
+import { duration } from "@mui/material";
+
 const portfolioDetails = {
   details: {
     name: "Himal Gautam",
     title: "Full Stack Software Developer",
     about:
-      "Dynamic software developer with over 1+ year of experience in software development, currently pursuing a Master's degree in Computer Science. Demonstrated expertise in technical problem-solving and a passion for technology. Seeking to leverage skills and academic background to excel and contributing to the future of flight innovation while honing leadership abilities and technical acumen.",
+      "Dynamic software developer with over 2+ year of experience in software development, currently pursuing a Master's degree in Computer Science. Demonstrated expertise in technical problem-solving and a passion for technology. Seeking to leverage skills and academic background to excel and contributing to the future of flight innovation while honing leadership abilities and technical acumen.",
     resume:
       "https://drive.google.com/file/d/14ZLQA7Ontottoi3y3qj08R2RB8rwp9-y/view?usp=sharing",
     CV: "https://drive.google.com/file/d/1-DH4kLW5fS3dKUbphQUrs-F4SlHSKGE5/view?usp=sharing",
@@ -13,35 +15,43 @@ const portfolioDetails = {
   },
   experiences: [
     {
+      position: "Software Development Engineer 1",
+      company: "Aptachain Solutions Pvt. Ltd.",
+      duration: "July 2024 - Current",
+      location: "Bangalore (remote)",
+      description: `⦿ Contributing to the development of an in-house EV industry product using Next.js and Prisma.
+⦿ Expanding full-stack development skills with a focus on modern JavaScript frameworks.
+⦿ Collaborating with the team to understand project requirements and actively participate in the development process.
+⦿ Adapting quickly to new technologies and development practices, showcasing a strong learning aptitude.`,
+    },
+    {
+      position: "Full Stack Web Developer",
+      company: "EcstaTech",
+      duration: "Nov 2023 - July 2024",
+      location: "Delhi (remote)",
+      description: `⦿ Delivered high-quality web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js), ensuring seamless functionality and user experience.
+⦿ Collaborated closely with clients to gather requirements, provide regular progress updates, and ensure complete satisfaction with the final product.
+⦿ Consistently met project deadlines, demonstrating strong time management and organizational skills.
+⦿ Troubleshooted and resolved technical issues efficiently, ensuring projects remained on track and within budget.
+⦿ Adapted to diverse project requirements and client preferences, showcasing flexibility and a commitment to delivering tailored solutions.`,
+    },
+    {
       position: "Full Stack Developer",
       company: "Aptachain Solutions Pvt. Ltd.",
       duration: "Nov 2022 - Oct 2023",
       location: "Bangalore",
-      description:
-        "Transitioned from Intern to Full Stack Developer, consistently delivering value over the tenure. Took the full responsibilty of the product from start to end. Led high-level design discussions and project planning with the share holders of the startup. Led a team having 2 developers as team lead, utilizing Azure DevOps and Google Spaces to guide and properly manage the tasks. Designed a robust SaaS product architecture according the requirements given. Completed the project documentation including product as well as process documentation. Implemented DevOps concepts (Docker, Kubernetes) and cloud computing (AWS, GCP, Oracle) on the base level. Took interviews for the positisions available for developers as the side tasks.",
-    },
-    {
-      position: "Full Stack Developer - Intern",
-      company: "Techivies Solutions Pvt. Ltd.",
-      duration: "Sept 2022 - Oct 2022",
-      location: "Ahmedabad",
-      description:
-        "Did a two-month program learning to build websites with AngularJS. Helped with big projects, working on the insides of websites and using AngularJS. Learned to use tools like Swagger for making projects easier. Got the hang of the MERN stack and how to do backend development, thanks to some smart guidance.,",
-    },
-    {
-      position: "Full Stack Developer - Intern",
-      company: "iPangram",
-      duration: "June 2022 - June 2022",
-      location: "Surat",
-      description:
-        "Hands-on experience in Full Stack development, applying core concepts to real-world projects. Designed and developed CRUD applications, aligning with specified task given. Demonstrated strong time management skills, consistently completing daily tasks. Maintained open communication with senior team members, submitting progress reports for efficient task coordination and supervision.",
+      description: `⦿ Designed and developed a SaaS product architecture, contributing to the successful launch and ongoing improvement of the product.
+⦿ Collaborated with senior professionals on high-level design (HLD) discussions, project planning, and implementation of solutions.
+⦿ Led application deployment efforts, making critical decisions on application lifecycle and development cycle management.
+⦿ Participated in the recruitment process, interviewing candidates for various technical positions within the company.
+⦿ Mentored and trained junior developers, fostering a collaborative and supportive team environment.`,
     },
   ],
   education: [
     {
-      degree: "Bachelor of Computer Applications",
-      school: "Veer Narmad South Gujarat University",
-      graduationYear: "2022",
+      degree: "Master of Science in Computer Science",
+      school: "Liverpool John Moores University",
+      graduationYear: "Present",
     },
     {
       degree: "Executive Post Graduate Program in Software Development",
@@ -49,9 +59,9 @@ const portfolioDetails = {
       graduationYear: "2023",
     },
     {
-      degree: "Master of Science in Computer Science",
-      school: "Liverpool John Moores University",
-      graduationYear: "Present",
+      degree: "Bachelor of Computer Applications",
+      school: "Veer Narmad South Gujarat University",
+      graduationYear: "2022",
     },
   ],
   projects: [
@@ -281,7 +291,7 @@ const portfolioDetails = {
         "Successfully passed MTA: Introduction to Python. Ready for advanced programming projects.",
     },
     {
-      issuer: "Amazon-Web-Services",
+      issuer: "AWS",
       link: "https://drive.google.com/file/d/1_Y5l5gdYW_mJ0B8fMBFhwGangqUR8xmP/view?usp=sharing",
       title: "AWS Cloud Practitioner Essentials (Course Completion)",
       description:
@@ -291,23 +301,21 @@ const portfolioDetails = {
       issuer: "Oracle",
       link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=49B9F8790D29B45BA49166E1C084353B28BE663F1FEEBCE99288844E2269E46A",
       title: "Oracle Cloud Infrastructure 2023 Certified Foundations Associate",
-      description:
-        "Achieved Oracle Cloud Infrastructure 2023 Certified Foundations Associate. Ready to contribute to cloud projects.",
+      description: "Ready to contribute to cloud projects.",
     },
     {
       issuer: "Guvi",
       link: "https://www.guvi.in/share-certificate/t6RJH1v19e2j07305K",
       title: "Full Stack MERN Web Developer",
       description:
-        "Completed Full Stack MERN Web Developer program. Prepared for roles in web development. Learned about multiple technologies related to web development.",
+        "Learned about multiple technologies related to web development.",
     },
     {
-      issuer: "Hacker-Rank",
-      link: "https://drive.google.com/drive/folders/1cjv_fa4z4uqMfx21Z079MdfYaYdbWYmG?usp=sharing",
-      title:
-        "Python (Basics), JavaScript (Basics), React (Basics), SQL (Basics)",
+      issuer: "Docker",
+      link: "https://www.linkedin.com/learning/certificates/4e7a3be4e1a4ec36b3e45feb0fca9b36f7a5f15fef260ee738248de22f524719",
+      title: "Docker Foundations Professional Certificate",
       description:
-        "Completed Python, JavaScript, React, and SQL courses. Ready for advanced learning and projects.",
+        "Learned about containerization using docker and tools",
     },
   ],
   testimonials: [
