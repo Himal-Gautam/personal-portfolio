@@ -5,13 +5,15 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import portfolioDetails from "../data/portfolioDetails";
-import { useTheme } from "@mui/system";
+import { border, borderColor, borderRadius, color, display, fontWeight, height, minHeight, spacing, style, textAlign, useTheme, width } from "@mui/system";
 import { Fade } from "react-awesome-reveal";
-import { useMediaQuery } from "@mui/material";
+import { duration, useMediaQuery } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import Link from "@mui/material/Link";
+import src from "gsap/src";
+import React from "react";
 
 export default function Certifications() {
   const theme = useTheme();
@@ -54,7 +56,7 @@ export default function Certifications() {
                   useFlexGap
                   sx={{
                     p: 3,
-                    minHeight: 250,
+                    minHeight: 200,
                     height: "100%",
                     border: "1px solid",
                     borderColor: theme === "light" ? "grey" : "grey.800",
@@ -75,8 +77,9 @@ export default function Certifications() {
                     <img
                       src={`/svg/${item.issuer}.svg`}
                       alt={`${item.issuer} Logo`}
-                      className="w-20 h-auto"
+                      className="w-20 h-auto border-r-15"
                       loading="lazy"
+                      style={{ borderRadius: '20%' }}
                     />
                   </Box>
                   <div>
